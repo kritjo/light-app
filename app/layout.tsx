@@ -1,5 +1,11 @@
 import {ReactNode} from "react";
 import './globals.css'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
 
 export default function RootLayout({
                                      children,
@@ -8,7 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <main className={`${inter.variable} font-sans`}>
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
