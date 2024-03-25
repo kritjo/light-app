@@ -5,6 +5,7 @@
     "strict": true,
     "alwaysStrict": true,
     "skipLibCheck": false,
+    "moduleResolution": "NodeNext",
   },
   "include": [
     "app/**/*"
