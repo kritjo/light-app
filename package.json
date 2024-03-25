@@ -12,5 +12,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.70"
   }
 }
