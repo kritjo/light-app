@@ -25,11 +25,8 @@
       }
     ]
   },
-  "include": [
-    "app/**/*",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": [".next/types/**/*.ts",
+    "app/**/*.ts", "components/**/*.ts", "db/**/*.ts", "server/**/*.ts", "types/**/*.tsx",
+    "app/**/*.tsx", "components/**/*.ts", "db/**/*.tsx", "server/**/*.tsx", "types/**/*.tsx"],
+  "exclude": ["node_modules"]
 }
