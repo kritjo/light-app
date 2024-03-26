@@ -13,7 +13,8 @@
     "no-console": ["error", { "allow": ["error"] }],
     "new-cap": "off",
     "one-var": "off",
-    "sort-keys": "off"
+    "sort-keys": "off",
+    "id-length": ["error", { "exceptionPatterns": ["^_"] }]
   },
   "overrides": [
     {
@@ -30,9 +31,29 @@
       "extends": [
         "plugin:@typescript-eslint/all"
       ],
-
       "parserOptions": {
         "project": ["./tsconfig.json"] // Specify it only for TypeScript files
+      },
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "@typescript-eslint/naming-convention": ["error", {
+          "selector": "default",
+          "format": ["camelCase"]
+        }, {
+          "selector": "typeParameter",
+          "format": ["PascalCase"],
+          "prefix": ["T"]
+        }, {
+          "selector": "interface",
+          "format": ["PascalCase"]
+        }, {
+            "selector": "function",
+            "modifiers": ["exported", "global"],
+            "format": ["camelCase", "PascalCase"]
+        }],
+        "@typescript-eslint/no-base-to-string": "error",
+        "@typescript-eslint/prefer-readonly-parameter-types": "error",
+        "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
       }
     }
   ]
