@@ -5,7 +5,8 @@
     "sort-imports": "off", // this is handled by Prettier
     "no-console": ["error", { "allow": ["error"] }],
     "new-cap": "off",
-    "one-var": "off"
+    "one-var": "off",
+    "sort-keys": "off"
   },
   "overrides": [
     {
