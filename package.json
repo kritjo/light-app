@@ -16,11 +16,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint --rulesdir eslint-rules",
     "makemigrations": "drizzle-kit generate:pg",
-    "migrate": "tsx db/migrate.ts"
+    "migrate": "tsx db/migrate.ts",
+    "prettier": "pnpm exec prettier . --write"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "^20.11.30",
     "@types/pg": "^8.11.4",
     "@types/react": "^18.2.70",

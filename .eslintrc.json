@@ -1,7 +1,18 @@
 {
+  "root": true,
   "extends": ["eslint:all", "next/core-web-vitals", "prettier"],
   "rules": {
+    "sort-imports": "off", // this is handled by Prettier
     "no-console": ["error", { "allow": ["error"] }],
-    "new-cap": "off"
-  }
+    "new-cap": "off",
+    "one-var": "off"
+  },
+  "overrides": [
+    {
+      "files": ["server/**/*"],
+      "rules": {
+        "use-server": "error"
+      }
+    }
+  ]
 }
