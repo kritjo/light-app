@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
+    "target": "esnext",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "alwaysStrict": true,
     "skipLibCheck": false,
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "bundler",
     "lib": [
       "dom",
       "dom.iterable",
@@ -25,8 +25,20 @@
       }
     ]
   },
-  "include": [".next/types/**/*.ts",
-    "app/**/*.ts", "components/**/*.ts", "db/**/*.ts", "server/**/*.ts", "types/**/*.tsx",
-    "app/**/*.tsx", "components/**/*.ts", "db/**/*.tsx", "server/**/*.tsx", "types/**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    ".next/types/**/*.ts",
+    "app/**/*.ts",
+    "components/**/*.ts",
+    "db/**/*.ts",
+    "server/**/*.ts",
+    "types/**/*.tsx",
+    "app/**/*.tsx",
+    "components/**/*.ts",
+    "db/**/*.tsx",
+    "server/**/*.tsx",
+    "types/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
