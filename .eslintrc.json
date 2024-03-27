@@ -64,7 +64,8 @@
         "no-underscore-dangle": "off", // This rule is handled by naming-convention
         "camelcase": "off", // This rule is handled by naming-convention
         "@typescript-eslint/no-base-to-string": "error",
-        "@typescript-eslint/prefer-readonly-parameter-types": "error"
+        "@typescript-eslint/prefer-readonly-parameter-types": "error",
+        "tsx-element-pascal-case": "error"
       }
     }
   ]
