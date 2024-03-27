@@ -5,10 +5,12 @@
     "es2022": true,
     "node": true
   },
-  "extends": ["eslint:all",
+  "extends": [
+    "eslint:all",
     "next/core-web-vitals",
     "prettier",
-    "plugin:eslint-comments/recommended"],
+    "plugin:eslint-comments/recommended"
+  ],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
   "rules": {
@@ -28,39 +30,54 @@
       }
     },
     {
-      "files": [".next/types/**/*.ts",
-        "app/**/*.ts", "components/**/*.ts", "db/**/*.ts", "server/**/*.ts", "types/**/*.tsx",
-        "app/**/*.tsx", "components/**/*.ts", "db/**/*.tsx", "server/**/*.tsx", "types/**/*.tsx"], // Your TypeScript files extension
+      "files": [
+        ".next/types/**/*.ts",
+        "app/**/*.ts",
+        "components/**/*.ts",
+        "db/**/*.ts",
+        "server/**/*.ts",
+        "types/**/*.tsx",
+        "app/**/*.tsx",
+        "components/**/*.ts",
+        "db/**/*.tsx",
+        "server/**/*.tsx",
+        "types/**/*.tsx"
+      ], // Your TypeScript files extension
 
-      "extends": [
-        "plugin:@typescript-eslint/all"
-      ],
+      "extends": ["plugin:@typescript-eslint/all"],
       "parserOptions": {
         "project": ["./tsconfig.json"] // Specify it only for TypeScript files
       },
       "rules": {
         "@typescript-eslint/explicit-function-return-type": "error",
-        "@typescript-eslint/naming-convention": ["error", {
-          "selector": "default",
-          "format": ["camelCase"]
-        }, {
-          "selector": "typeParameter",
-          "format": ["PascalCase"],
-          "prefix": ["T"]
-        }, {
-          "selector": "interface",
-          "format": ["PascalCase"]
-        }, {
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": "default",
+            "format": ["camelCase"]
+          },
+          {
+            "selector": "typeParameter",
+            "format": ["PascalCase"],
+            "prefix": ["T"]
+          },
+          {
+            "selector": "interface",
+            "format": ["PascalCase"]
+          },
+          {
             "selector": "function",
             "modifiers": ["exported", "global"],
             "format": ["camelCase", "PascalCase"]
-        }, {
-          "selector": "default",
-          "modifiers": ["unused"],
-          "format": ["camelCase"],
-          "leadingUnderscore": "require"
-        }],
-        "@typescript-eslint/no-unused-vars": "off", // This rule is handled by naming-convention
+          },
+          {
+            "selector": "default",
+            "modifiers": ["unused"],
+            "format": ["camelCase"],
+            "leadingUnderscore": "require"
+          }
+        ],
+        "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "_" }], // This rule is handled by naming-convention
         "no-underscore-dangle": "off", // This rule is handled by naming-convention
         "camelcase": "off", // This rule is handled by naming-convention
         "@typescript-eslint/no-base-to-string": "error",
