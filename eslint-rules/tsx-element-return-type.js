@@ -5,13 +5,16 @@ module.exports = {
     }
     return {
       ExportDefaultDeclaration(node) {
-        if (node.declaration?.returnType?.typeAnnotation.typeName.name !== "ReactElement") {
+        if (
+          node.declaration?.returnType?.typeAnnotation.typeName.name !==
+          "ReactElement"
+        ) {
           context.report({
             node,
-            message: "Element must return a ReactElement"
+            message: "Element must return a ReactElement",
           });
         }
-      }
+      },
     };
-  }
+  },
 };

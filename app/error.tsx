@@ -1,4 +1,3 @@
-// Error components must be Client Components
 "use client";
 
 import type { ReactElement } from "react";
@@ -11,7 +10,6 @@ export interface ErrorProps {
 }
 
 export default function Error(props: ErrorProps): ReactElement {
-
   useEffect(() => {
     console.error(props.error);
   }, [props.error]);
@@ -19,9 +17,7 @@ export default function Error(props: ErrorProps): ReactElement {
   return (
     <div className="flex flex-col justify-around items-center min-h-[7rem]">
       <h2>Something went wrong!</h2>
-      <p>
-        {props.error.message.toString()}
-      </p>
+      <p>{props.error.message.toString()}</p>
       <button
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         onClick={

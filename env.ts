@@ -1,5 +1,5 @@
+import { loadEnvConfig } from "@next/env";
 import { z } from "zod";
-import {loadEnvConfig} from "@next/env";
 
 loadEnvConfig(process.cwd());
 

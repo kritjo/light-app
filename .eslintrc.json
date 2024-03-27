@@ -77,7 +77,10 @@
             "leadingUnderscore": "require"
           }
         ],
-        "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "_" }], // This rule is handled by naming-convention
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          { "varsIgnorePattern": "_" }
+        ], // This rule is handled by naming-convention
         "no-underscore-dangle": "off", // This rule is handled by naming-convention
         "camelcase": "off", // This rule is handled by naming-convention
         "@typescript-eslint/no-base-to-string": "error",

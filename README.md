@@ -1,6 +1,7 @@
 # Light-app
 
 ## Stack
+
 - React
 - Next
 - Typescript
@@ -12,6 +13,7 @@
 - @next/env (custom dotenv)
 
 ## Running tools
+
 ```bash
 # Running lint
 pnpm lint
@@ -22,6 +24,7 @@ pnpm exec prettier . --write
 ```
 
 ## Strict naming convention
+
 - In general all identifiers must be in camelCase.
 - No underscore in identifiers, except for unused identifiers, which MUST be prefixed with an underscore.
 - All .tsx files must contain a global function export with the same name as the file, in PascalCase, and the function must return a ReactElement.
@@ -29,8 +32,9 @@ pnpm exec prettier . --write
 - Interface names must be in PascalCase.
 
 ## Other code style rules
+
 - Props should NOT be destructured in the function signature, and should be named `props`.
 - All props should be typed, and readonly.
 - Eslint rules can be disabled, but require a comment explaining why.
 
-  ```//eslint-disable-next-line no-console -- This is a temporary debugging statement```
+  `//eslint-disable-next-line no-console -- This is a temporary debugging statement`
