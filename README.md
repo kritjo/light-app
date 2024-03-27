@@ -12,15 +12,14 @@
 - pnpm
 - @next/env (custom dotenv)
 
-## Running tools
+## Tools
 
 ```bash
-# Running lint
+# Running lint (you should set up eslint pre-commit hook)
 pnpm lint
 
 # Running prettier (you should set up prettier on save in your editor)
-pnpm exec prettier . --write
-# do not use `pnpm prettier --write .` because it will use the global prettier
+pnpm prettier
 ```
 
 ## Strict naming convention
@@ -33,8 +32,18 @@ pnpm exec prettier . --write
 
 ## Other code style rules
 
+- All eslint rules are not checked, I believe in enable everything, disable what does not make sense. Yes, linting takes time, but with this amount
+of pedantic rules, it is worth it, to avoid writing tests.
 - Props should NOT be destructured in the function signature, and should be named `props`.
 - All props should be typed, and readonly.
 - Eslint rules can be disabled, but require a comment explaining why.
 
   `//eslint-disable-next-line no-console -- This is a temporary debugging statement`
+
+## Prettier
+Has some stuff I don't like, such as this is not allowed:
+```tsx
+// Error components must be client components
+"use client";
+```
+And is not possible to disable, but the overall benefits of prettier are worth it, compared to the minor annoyances.
