@@ -6,7 +6,7 @@ module.exports = {
 
     return {
       ExportDefaultDeclaration(node) {
-        if (/^[a-z]/.test(node.declaration.id.name.charAt(0))) {
+        if (/^[a-z]/u.test(node.declaration.id.name.charAt(0))) {
           context.report({
             node,
             message: `Element name must start with a capital letter`
