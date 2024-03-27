@@ -18,7 +18,8 @@
     "one-var": "off",
     "sort-keys": "off",
     "id-length": ["error", { "exceptionPatterns": ["^_"] }],
-    "eslint-comments/require-description": "error"
+    "eslint-comments/require-description": "error",
+    "prefer-non-expanded-props": "error"
   },
   "overrides": [
     {
