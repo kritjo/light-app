@@ -1,24 +1,22 @@
-import {ReactNode} from "react";
-import './globals.css'
-import { Inter } from 'next/font/google'
+import type { ReactElement, ReactNode } from "react";
+import "./globals.css";
+import { Inter } from "next/font/google";
 
 const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-})
+  subsets: ["latin"],
+  variable: "--font-inter"
+});
 
-export default function RootLayout({
-                                     children,
-                                   }: {
-  children: ReactNode
-}) {
+export default function RootLayout(props: {
+  readonly children: Readonly<ReactElement>;
+}): ReactElement {
   return (
     <html lang="en">
-      <body>
-        <main className={`${inter.variable} font-sans`}>
-          {children}
-        </main>
-      </body>
+    <body>
+    <main className={`${inter.variable} font-sans`}>
+      {props.children}
+    </main>
+    </body>
     </html>
-  )
+  );
 }

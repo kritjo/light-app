@@ -1,34 +1,38 @@
-'use client' // Error components must be Client Components
+// Error components must be Client Components
+"use client";
 
-import { useEffect } from 'react'
+import type { ReactElement } from "react";
+// eslint-disable-next-line no-duplicate-imports -- Required for the type
+import { useEffect } from "react";
 
-export default function Error({
-                                error,
-                                reset,
-                              }: {
-  error: Error & { digest?: string }
-  reset: () => void
-}) {
+export interface ErrorProps {
+  readonly error: Readonly<Error> & { readonly digest?: string };
+  readonly reset: () => void;
+}
+
+export default function Error(props: ErrorProps): ReactElement {
+
   useEffect(() => {
-    // Log the error to an error reporting service
-    console.error(error)
-  }, [error])
+    console.error(props.error);
+  }, [props.error]);
 
   return (
     <div className="flex flex-col justify-around items-center min-h-[7rem]">
       <h2>Something went wrong!</h2>
       <p>
-        {error.toString()}
+        {props.error.message.toString()}
       </p>
       <button
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         onClick={
           // Attempt to recover by trying to re-render the segment
-          () => reset()
+          () => {
+            props.reset();
+          }
         }
       >
         Try again
       </button>
     </div>
-  )
+  );
 }
