@@ -67,7 +67,11 @@
         "@typescript-eslint/prefer-readonly-parameter-types": "error",
         "tsx-element-pascal-case": "error",
         "tsx-props-no-spreading": "error",
-        "tsx-element-return-type": "error"
+        "tsx-element-return-type": "error",
+        "@typescript-eslint/consistent-type-imports": "error",
+        "@typescript-eslint/no-confusing-void-expression": "error",
+        "@typescript-eslint/use-unknown-in-catch-callback-variable": "error",
+        "@typescript-eslint/no-unsafe-member-access": "error"
       }
     }
   ]
