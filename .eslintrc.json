@@ -5,7 +5,10 @@
     "es2022": true,
     "node": true
   },
-  "extends": ["eslint:all", "next/core-web-vitals", "prettier"],
+  "extends": ["eslint:all",
+    "next/core-web-vitals",
+    "prettier",
+    "plugin:eslint-comments/recommended"],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
   "rules": {
@@ -14,7 +17,8 @@
     "new-cap": "off",
     "one-var": "off",
     "sort-keys": "off",
-    "id-length": ["error", { "exceptionPatterns": ["^_"] }]
+    "id-length": ["error", { "exceptionPatterns": ["^_"] }],
+    "eslint-comments/require-description": "error"
   },
   "overrides": [
     {

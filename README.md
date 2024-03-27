@@ -31,3 +31,6 @@ pnpm exec prettier . --write
 ## Other code style rules
 - Props should NOT be destructured in the function signature, and should be named `props`.
 - All props should be typed, and readonly.
+- Eslint rules can be disabled, but require a comment explaining why.
+
+  ```//eslint-disable-next-line no-console -- This is a temporary debugging statement```
