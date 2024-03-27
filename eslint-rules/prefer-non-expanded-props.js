@@ -5,12 +5,9 @@ module.exports = {
     }
     return {
       ExportDefaultDeclaration(node) {
-        let propsParam = false;
         if (node.declaration.params
-            .filter(param => param.type !== "Identifier")
-            .length > 0 ||
-          !node.declaration.params
-            .filter(param => param.type === "Identifier")
+            .filter(param => param.type !== "Identifier").length > 0
+          || !node.declaration.params
             .every(param => param.name === "props")) {
           context.report({
             node,
