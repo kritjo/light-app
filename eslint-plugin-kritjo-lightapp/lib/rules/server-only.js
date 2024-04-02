@@ -4,10 +4,10 @@ module.exports = {
       Program(node) {
         const sourceCode = context.sourceCode.getText();
 
-        if (!sourceCode.match(/^import ['"]server-only['"]$/)) {
+        if (!sourceCode.match(/^import ['"]server-only['"];.*/u)) {
           context.report({
             node,
-            message: `The file must include "import 'server-only'"`,
+            message: `The file must include "import 'server-only';`,
           });
         }
       },
