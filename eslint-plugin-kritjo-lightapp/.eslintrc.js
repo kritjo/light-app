@@ -11,4 +11,7 @@ module.exports = {
     node: true,
   },
   overrides: [],
+  parserOptions: {
+    ecmaVersion: 2020,
+  },
 };

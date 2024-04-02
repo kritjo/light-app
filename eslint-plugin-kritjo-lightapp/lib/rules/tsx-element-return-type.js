@@ -6,7 +6,7 @@ module.exports = {
     return {
       ExportDefaultDeclaration(node) {
         if (
-          node.declaration.returnType.typeAnnotation.typeName.name !==
+          node?.declaration?.returnType?.typeAnnotation?.typeName.name !==
           "ReactElement"
         ) {
           context.report({
