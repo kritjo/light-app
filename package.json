@@ -20,9 +20,7 @@
     "lint": "next lint",
     "makemigrations": "drizzle-kit generate:pg",
     "migrate": "tsx db/migrate.ts",
-    "prettier": "pnpm exec prettier . --write",
-    "install:eslint-plugin-kritjo-lightapp": "cd eslint-plugin-kritjo-lightapp && pnpm install",
-    "postinstall": "run-p install:*"
+    "prettier": "pnpm exec prettier . --write"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
@@ -38,7 +36,6 @@
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-kritjo-lightapp": "file:eslint-plugin-kritjo-lightapp",
     "eslint-plugin-react": "^7.34.1",
-    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.38",
     "prettier": "3.2.5",
     "tailwindcss": "^3.4.3",
