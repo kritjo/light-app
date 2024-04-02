@@ -50,3 +50,14 @@ And is not possible to disable, but the overall benefits of prettier are worth i
 
 ## Known caveats
 - Readonly rule enforced by react plugin does not require that recursive types are readonly.
+
+## Folder structure
+- Actions - Server actions (API calls)
+- App - Next.js appdir
+- Components - React components
+- DB - Database, schemas and connections
+- Drizzle - Drizzle internal stuff
+- eslint-plugin-kritjo-lightapp - Custom eslint rules
+- public - Public files
+- Server - Server code (library stuff and business logic)
+- Types - Typescript types
