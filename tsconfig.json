@@ -23,11 +23,13 @@
   },
   "include": [
     ".next/types/**/*.ts",
+    "actions/**/*.ts",
     "app/**/*.ts",
     "components/**/*.ts",
     "db/**/*.ts",
     "server/**/*.ts",
     "types/**/*.tsx",
+    "actions/**/*.tsx",
     "app/**/*.tsx",
     "components/**/*.ts",
     "db/**/*.tsx",
