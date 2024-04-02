@@ -67,6 +67,9 @@ devDependencies:
   eslint-plugin-kritjo-lightapp:
     specifier: link:./eslint-plugin-kritjo-lightapp
     version: link:eslint-plugin-kritjo-lightapp
+  eslint-plugin-react:
+    specifier: ^7.34.1
+    version: 7.34.1(eslint@8.57.0)
   npm-run-all:
     specifier: ^4.1.5
     version: 4.1.5
@@ -3821,6 +3824,7 @@ packages:
 
   /resolve@2.0.0-next.5:
     resolution: {integrity: sha512-U7WjGVG9sH8tvjW5SmGbQuui75FiyjAX72HX15DwBBwF9dNiQZRQAg9nnPhYy+TUnE0+VcrttuvNI8oSxZcocA==}
+    hasBin: true
     dependencies:
       is-core-module: 2.13.1
       path-parse: 1.0.7

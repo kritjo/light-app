@@ -47,3 +47,6 @@ Has some stuff I don't like, such as this is not allowed:
 "use client";
 ```
 And is not possible to disable, but the overall benefits of prettier are worth it, compared to the minor annoyances.
+
+## Known caveats
+- Readonly rule enforced by react plugin does not require that recursive types are readonly.
