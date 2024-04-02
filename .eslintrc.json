@@ -94,7 +94,7 @@
         ],
         "@typescript-eslint/no-unused-vars": [
           "error",
-          { "varsIgnorePattern": "_" }
+          { "argsIgnorePattern": "^_", "destructuredArrayIgnorePattern": "^_", "varsIgnorePattern": "^_" }
         ], // This rule is handled by naming-convention
         "no-underscore-dangle": "off", // This rule is handled by naming-convention
         "camelcase": "off", // This rule is handled by naming-convention
