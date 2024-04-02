@@ -36,7 +36,7 @@
     "eslint-config-next": "14.1.4",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-kritjo-lightapp": "link:eslint-plugin-kritjo-lightapp",
+    "eslint-plugin-kritjo-lightapp": "file:eslint-plugin-kritjo-lightapp",
     "eslint-plugin-react": "^7.34.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.38",

@@ -68,8 +68,8 @@ devDependencies:
     specifier: ^3.2.0
     version: 3.2.0(eslint@8.57.0)
   eslint-plugin-kritjo-lightapp:
-    specifier: link:eslint-plugin-kritjo-lightapp
-    version: link:eslint-plugin-kritjo-lightapp
+    specifier: file:eslint-plugin-kritjo-lightapp
+    version: file:eslint-plugin-kritjo-lightapp(eslint@8.57.0)
   eslint-plugin-react:
     specifier: ^7.34.1
     version: 7.34.1(eslint@8.57.0)
@@ -3834,6 +3834,11 @@ packages:
       set-function-name: 2.0.2
     dev: true
 
+  /requireindex@1.2.0:
+    resolution: {integrity: sha512-L9jEkOi3ASd9PYit2cwRfyppc9NoABujTP8/5gFcbERmo5jUoAKovIC3fsF17pkTnGsrByysqX+Kxd2OTNI1ww==}
+    engines: {node: '>=0.10.5'}
+    dev: true
+
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
@@ -4553,3 +4558,15 @@ packages:
 
   /zod@3.22.4:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
+
+  file:eslint-plugin-kritjo-lightapp(eslint@8.57.0):
+    resolution: {directory: eslint-plugin-kritjo-lightapp, type: directory}
+    id: file:eslint-plugin-kritjo-lightapp
+    name: eslint-plugin-kritjo-lightapp
+    engines: {node: ^14.17.0 || ^16.0.0 || >= 18.0.0}
+    peerDependencies:
+      eslint: '>=7'
+    dependencies:
+      eslint: 8.57.0
+      requireindex: 1.2.0
+    dev: true
