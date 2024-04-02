@@ -12,7 +12,10 @@
     "plugin:eslint-comments/recommended"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": [
+    "@typescript-eslint",
+    "kritjo-lightapp"
+  ],
   "rules": {
     "sort-imports": "off", // this is handled by Prettier
     "no-console": ["error", { "allow": ["error"] }],
@@ -26,7 +29,7 @@
     {
       "files": ["server/**/*"],
       "rules": {
-        "use-server": "error"
+        "kritjo-lightapp/use-server": "error"
       }
     },
     {
@@ -85,9 +88,9 @@
         "camelcase": "off", // This rule is handled by naming-convention
         "@typescript-eslint/no-base-to-string": "error",
         "@typescript-eslint/prefer-readonly-parameter-types": "error",
-        "tsx-element-pascal-case": "error",
-        "tsx-props-no-spreading": "error",
-        "tsx-element-return-type": "error",
+        "kritjo-lightapp/tsx-element-pascal-case": "error",
+        "kritjo-lightapp/tsx-props-no-spreading": "error",
+        "kritjo-lightapp/tsx-element-return-type": "error",
         "@typescript-eslint/consistent-type-imports": "error",
         "@typescript-eslint/no-confusing-void-expression": "error",
         "@typescript-eslint/use-unknown-in-catch-callback-variable": "error",
