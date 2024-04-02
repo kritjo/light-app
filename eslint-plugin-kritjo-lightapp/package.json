@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-kritjo-lightapp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Custom Rules that kritjo likes for react and next",
   "keywords": [
     "eslint",

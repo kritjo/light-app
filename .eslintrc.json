@@ -37,6 +37,12 @@
       }
     },
     {
+      "files": ["server/**/*"],
+        "rules": {
+            "kritjo-lightapp/server-only": "error"
+        }
+    },
+    {
       "files": [
         ".next/types/**/*.ts",
         "actions/**/*.ts",
