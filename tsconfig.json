@@ -4,6 +4,7 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "alwaysStrict": true,
+    "strictNullChecks": true,
     "skipLibCheck": true,
     "moduleResolution": "bundler",
     "lib": ["dom", "dom.iterable", "esnext"],
