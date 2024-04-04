@@ -1,9 +1,10 @@
 module.exports = {
   meta: {
-    type: "suggestion",
     messages: {
       elementNameMustStartWithCapitalLetter: `Element name must start with a capital letter`,
     },
+    type: "suggestion",
+    schema: [],
   },
   create(context) {
     if (!context.filename.endsWith(".tsx")) {

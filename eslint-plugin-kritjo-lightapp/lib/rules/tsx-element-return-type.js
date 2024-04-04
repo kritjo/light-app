@@ -1,9 +1,10 @@
 module.exports = {
   meta: {
-    type: "suggestion",
     messages: {
       elementMustReturnReactElement: "Element must return a ReactElement",
     },
+    type: "suggestion",
+    schema: [],
   },
   create(context) {
     if (!context.filename.endsWith(".tsx")) {

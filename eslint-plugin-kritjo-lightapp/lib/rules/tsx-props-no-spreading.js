@@ -1,10 +1,11 @@
 module.exports = {
   meta: {
-    type: "suggestion",
     messages: {
       preferSinglePropsParameter:
         "Prefer a single 'props' parameter instead of expanded props",
     },
+    type: "suggestion",
+    schema: [],
   },
   create(context) {
     if (!context.filename.endsWith(".tsx")) {
