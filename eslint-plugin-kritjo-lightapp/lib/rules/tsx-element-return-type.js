@@ -1,4 +1,9 @@
 module.exports = {
+  meta: {
+    messages: {
+      elementMustReturnReactElement: "Element must return a ReactElement",
+    },
+  },
   create(context) {
     if (!context.filename.endsWith(".tsx")) {
       return {};
@@ -11,7 +16,7 @@ module.exports = {
         ) {
           context.report({
             node,
-            message: "Element must return a ReactElement",
+            messageId: "elementMustReturnReactElement",
           });
         }
       },

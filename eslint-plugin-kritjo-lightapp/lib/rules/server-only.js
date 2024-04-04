@@ -1,4 +1,9 @@
 module.exports = {
+  meta: {
+    messages: {
+      missingImport: "The file must include \"import 'server-only';\"",
+    },
+  },
   create(context) {
     return {
       Program(node) {
@@ -7,7 +12,7 @@ module.exports = {
         if (!sourceCode.match(/^import ['"]server-only['"];.*/u)) {
           context.report({
             node,
-            message: `The file must include "import 'server-only';`,
+            messageId: "missingImport",
           });
         }
       },

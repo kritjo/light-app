@@ -1,4 +1,9 @@
 module.exports = {
+  meta: {
+    messages: {
+      missingUseServer: 'The file must start with "use server";',
+    },
+  },
   create(context) {
     return {
       Program(node) {
@@ -12,7 +17,7 @@ module.exports = {
         if (line !== '"use server";' && line !== "'use server';") {
           context.report({
             node,
-            message: `The file must start with "use server"; but found "${line}"`,
+            messageId: "missingUseServer",
           });
         }
       },

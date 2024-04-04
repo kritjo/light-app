@@ -1,4 +1,9 @@
 module.exports = {
+  meta: {
+    messages: {
+      elementNameMustStartWithCapitalLetter: `Element name must start with a capital letter`,
+    },
+  },
   create(context) {
     if (!context.filename.endsWith(".tsx")) {
       return {};
@@ -9,7 +14,7 @@ module.exports = {
         if (/^[a-z]/u.test(node.declaration.id.name.charAt(0))) {
           context.report({
             node,
-            message: `Element name must start with a capital letter`,
+            messageId: "elementNameMustStartWithCapitalLetter",
           });
         }
       },

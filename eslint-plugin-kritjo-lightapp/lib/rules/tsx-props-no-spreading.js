@@ -1,4 +1,10 @@
 module.exports = {
+  meta: {
+    messages: {
+      preferSinglePropsParameter:
+        "Prefer a single 'props' parameter instead of expanded props",
+    },
+  },
   create(context) {
     if (!context.filename.endsWith(".tsx")) {
       return {};
@@ -12,8 +18,7 @@ module.exports = {
         ) {
           context.report({
             node,
-            message:
-              "Prefer a single 'props' parameter instead of expanded props",
+            messageId: "preferSinglePropsParameter",
           });
         }
       },
