@@ -50,6 +50,7 @@ TODO: Run eslint-doc-generator to generate the configs list (or delete this sect
 
 | Name                                                             |
 | :--------------------------------------------------------------- |
+| [server-only](docs/rules/server-only.md)                         |
 | [tsx-element-pascal-case](docs/rules/tsx-element-pascal-case.md) |
 | [tsx-element-return-type](docs/rules/tsx-element-return-type.md) |
 | [tsx-props-no-spreading](docs/rules/tsx-props-no-spreading.md)   |
