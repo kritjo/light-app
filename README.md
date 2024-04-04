@@ -66,3 +66,7 @@ And is not possible to disable, but the overall benefits of prettier are worth i
 - public - Public files
 - Server - Server code (library stuff and business logic)
 - Types - Typescript types
+
+## Timezones
+- All dates are stored in UTC in the database.
+- The application should always display dates in the user's local timezone, and convert dates to UTC before storing them in the database.
