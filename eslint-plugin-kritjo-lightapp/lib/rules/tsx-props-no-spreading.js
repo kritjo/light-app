@@ -1,5 +1,6 @@
 module.exports = {
   meta: {
+    type: "suggestion",
     messages: {
       preferSinglePropsParameter:
         "Prefer a single 'props' parameter instead of expanded props",

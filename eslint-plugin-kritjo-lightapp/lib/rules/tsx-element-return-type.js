@@ -1,5 +1,6 @@
 module.exports = {
   meta: {
+    type: "suggestion",
     messages: {
       elementMustReturnReactElement: "Element must return a ReactElement",
     },

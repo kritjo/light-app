@@ -1,5 +1,6 @@
 module.exports = {
   meta: {
+    type: "problem",
     messages: {
       missingUseServer: 'The file must start with "use server";',
     },

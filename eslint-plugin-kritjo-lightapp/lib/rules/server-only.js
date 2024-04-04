@@ -1,5 +1,6 @@
 module.exports = {
   meta: {
+    type: "suggestion",
     messages: {
       missingImport: "The file must include \"import 'server-only';\"",
     },

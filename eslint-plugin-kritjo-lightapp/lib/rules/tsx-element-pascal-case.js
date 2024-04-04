@@ -1,5 +1,6 @@
 module.exports = {
   meta: {
+    type: "suggestion",
     messages: {
       elementNameMustStartWithCapitalLetter: `Element name must start with a capital letter`,
     },
