@@ -28,7 +28,7 @@
     "components/**/*.ts",
     "db/**/*.ts",
     "server/**/*.ts",
-    "types/**/*.tsx",
+    "types/**/*.ts",
     "actions/**/*.tsx",
     "app/**/*.tsx",
     "components/**/*.ts",
