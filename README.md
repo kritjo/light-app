@@ -33,7 +33,7 @@ pnpm prettier
 ## Other code style rules
 
 - All eslint rules are not checked, I believe in enable everything, disable what does not make sense. Yes, linting takes time, but with this amount
-of pedantic rules, it is worth it, to avoid writing tests.
+  of pedantic rules, it is worth it, to avoid writing tests.
 - Props should NOT be destructured in the function signature, and should be named `props`.
 - All props should be typed, and readonly.
 - Eslint rules can be disabled, but require a comment explaining why.
@@ -41,17 +41,22 @@ of pedantic rules, it is worth it, to avoid writing tests.
   `//eslint-disable-next-line no-console -- This is a temporary debugging statement`
 
 ## Prettier
+
 Has some stuff I don't like, such as this is not allowed:
+
 ```tsx
 // Error components must be client components
 "use client";
 ```
+
 And is not possible to disable, but the overall benefits of prettier are worth it, compared to the minor annoyances.
 
 ## Known caveats
+
 - Readonly rule enforced by react plugin does not require that recursive types are readonly.
 
 ## Folder structure
+
 - Actions - Server actions (API calls)
 - App - Next.js appdir
 - Components - React components

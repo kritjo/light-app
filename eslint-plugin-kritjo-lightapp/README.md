@@ -22,32 +22,27 @@ Add `kritjo-lightapp` to the plugins section of your `.eslintrc` configuration f
 
 ```json
 {
-    "plugins": [
-        "kritjo-lightapp"
-    ]
+  "plugins": ["kritjo-lightapp"]
 }
 ```
-
 
 Then configure the rules you want to use under the rules section.
 
 ```json
 {
-    "rules": {
-        "kritjo-lightapp/rule-name": 2
-    }
+  "rules": {
+    "kritjo-lightapp/rule-name": 2
+  }
 }
 ```
-
-
 
 ## Configurations
 
 <!-- begin auto-generated configs list -->
+
 TODO: Run eslint-doc-generator to generate the configs list (or delete this section if no configs are offered).
+
 <!-- end auto-generated configs list -->
-
-
 
 ## Rules
 
@@ -61,5 +56,3 @@ TODO: Run eslint-doc-generator to generate the configs list (or delete this sect
 | [use-server](docs/rules/use-server.md)                           |
 
 <!-- end auto-generated rules list -->
-
-

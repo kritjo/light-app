@@ -13,10 +13,7 @@
     "plugin:react/recommended"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint",
-    "kritjo-lightapp"
-  ],
+  "plugins": ["@typescript-eslint", "kritjo-lightapp"],
   "rules": {
     "sort-imports": "off", // this is handled by Prettier
     "no-console": ["error", { "allow": ["error"] }],
@@ -38,9 +35,9 @@
     },
     {
       "files": ["server/**/*"],
-        "rules": {
-            "kritjo-lightapp/server-only": "error"
-        }
+      "rules": {
+        "kritjo-lightapp/server-only": "error"
+      }
     },
     {
       "files": [
@@ -94,7 +91,11 @@
         ],
         "@typescript-eslint/no-unused-vars": [
           "error",
-          { "argsIgnorePattern": "^_", "destructuredArrayIgnorePattern": "^_", "varsIgnorePattern": "^_" }
+          {
+            "argsIgnorePattern": "^_",
+            "destructuredArrayIgnorePattern": "^_",
+            "varsIgnorePattern": "^_"
+          }
         ], // This rule is handled by naming-convention
         "no-underscore-dangle": "off", // This rule is handled by naming-convention
         "camelcase": "off", // This rule is handled by naming-convention
@@ -110,10 +111,10 @@
       }
     },
     {
-        "files": ["**/*.tsx"],
-        "rules": {
-            "@typescript-eslint/prefer-readonly-parameter-types": "off"
-        }
+      "files": ["**/*.tsx"],
+      "rules": {
+        "@typescript-eslint/prefer-readonly-parameter-types": "off"
+      }
     }
   ]
 }
